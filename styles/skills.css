@@ -1,0 +1,274 @@
+.skill-content {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    padding-top: 80px;
+    /* border: 1px solid black; */
+}
+
+.skill-content>div:nth-child(1) {
+    width: 15%;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+}
+
+.skill-content>div:nth-child(1)>h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.tech-skills {
+    display: grid;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    grid-template-columns: repeat(3, 1.3fr);
+    width: 30%;
+    gap: 20px;
+    /* border: 1px solid black; */
+}
+
+.tech-skills>div {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+
+}
+
+.tech-skills>div>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 90%;
+}
+
+.tech-skills>div:nth-child(5)>img {
+    height: 80%;
+    width: 70%;
+    padding-top: 25px;
+}
+
+.tech-skills>div:nth-child(6)>img {
+    height: 90%;
+    width: 90%;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.git-stats {
+    width: 60%;
+    height: 24%;
+    margin: auto;
+    /* border: 1px solid black; */
+    cursor: pointer;
+}
+
+.calendar {
+    width: 100%;
+    height: 100%;
+}
+
+.calendar>h2 {
+    font-weight: 600;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.calendar>img {
+    width: 98%;
+    height: 60%;
+}
+
+.git-stats>h2 {
+    font-weight: 600;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.streaks {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    /* border: 1px solid black; */
+}
+
+.streaks>img {
+    width: 48%;
+    height: 98%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+}
+
+@media all and (min-width:768px) and (max-width:1023px) {
+
+    .skill-content {
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+        padding-top: 40px;
+        /* border: 1px solid black; */
+    }
+
+    .skill-content>div:nth-child(1) {
+        width: 20%;
+        height: 40px;
+        margin: auto;
+        text-align: center;
+        background-color: black;
+        border-radius: 10px;
+        /* border: 1px solid black; */
+    }
+
+    .skill-content>div:nth-child(1)>h2 {
+        font-size: 26px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .tech-skills {
+        display: grid;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        grid-template-columns: repeat(3, 1fr);
+        width: 50%;
+        gap: 20px;
+        /* border: 1px solid black; */
+    }
+
+    .git-stats {
+        width: 80%;
+        height: 20%;
+        margin: auto;
+        /* border: 1px solid black; */
+        cursor: pointer;
+    }
+
+    .calendar {
+        width: 100%;
+        height: 100%;
+    }
+
+    .calendar>img {
+        width: 98%;
+        height: 50%;
+    }
+
+    .git-stats>h2 {
+        font-weight: 600;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        /* border: 1px solid black; */
+    }
+
+    .streaks {
+        width: 100%;
+        display: block;
+    }
+
+    .streaks>img {
+        width: 70%;
+        height: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media all and (min-width:321px) and (max-width:767px) {
+
+    .skill-content {
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+        padding-top: 40px;
+        /* border: 1px solid black; */
+    }
+
+    .skill-content>div:nth-child(1) {
+        width: 40%;
+        height: 40px;
+        margin: auto;
+        text-align: center;
+        background-color: black;
+        border-radius: 10px;
+        /* border: 1px solid black; */
+    }
+
+    .skill-content>div:nth-child(1)>h2 {
+        font-size: 26px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .tech-skills {
+        display: grid;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+        gap: 20px;
+        /* border: 1px solid black; */
+    }
+
+    .git-stats {
+        width: 98%;
+        height: 20%;
+        margin: auto;
+        /* border: 1px solid black; */
+        cursor: pointer;
+    }
+
+    .calendar>img {
+        width: 98%;
+        height: 40%;
+    }
+
+    .git-stats>h2 {
+        font-weight: 600;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        /* border: 1px solid black; */
+    }
+
+    .streaks {
+        width: 100%;
+        display: inline-block;
+        /* border: 1px solid black; */
+    }
+
+    .streaks>img {
+        width: 95%;
+        height: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        border-radius: 15px;
+        /* border: 1px solid black; */
+    }
+
+}
