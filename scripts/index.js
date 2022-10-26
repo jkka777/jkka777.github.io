@@ -78,7 +78,7 @@ let toHomePage = () => {
 
     catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
-    catchElem('.buttons-nav>div:nth-child(6)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+    catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
     mainContent.style.height = '980px';
 
@@ -121,7 +121,7 @@ let aboutPage = () => {
 
     catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
-    catchElem('.buttons-nav>div:nth-child(6)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+    catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
     mainContent.style.height = '980px';
 
@@ -200,7 +200,7 @@ let skillsPage = () => {
 
     catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
-    catchElem('.buttons-nav>div:nth-child(6)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+    catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
     let git_stattus = createElem('div');
     git_stattus.setAttribute('class', 'git-stats');
@@ -573,7 +573,7 @@ let projectsPage = () => {
 
     catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
-    catchElem('.buttons-nav>div:nth-child(6)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+    catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
 };
 
@@ -688,7 +688,36 @@ let contactPage = () => {
 
     catchElem('.buttons-nav>div:nth-child(4)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
-    catchElem('.buttons-nav>div:nth-child(6)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
-}
+    catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+};
 
 catchElem('.buttons-nav>div:nth-child(5)>button').addEventListener('click', contactPage);
+
+let resume = () => {
+
+    // styling part //
+
+    catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(1)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(2)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(3)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(4)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+
+};
+
+catchElem('.buttons-nav>div:nth-child(6)>a>button').addEventListener('click', resume);
+
+let toLinkdIn = () => window.open('https://www.linkedin.com/in/kishore-j-8986bb235/');
+catchElem('.footer>div:nth-child(1)').addEventListener('click', toLinkdIn);
+
+let toGitHub = () => window.open('https://github.com/jkka777');
+catchElem('.footer>div:nth-child(2)').addEventListener('click', toGitHub);
+
+let toTwitter = () => window.open('https://twitter.com/hxh_kishore');
+catchElem('.footer>div:nth-child(3)').addEventListener('click', toTwitter);

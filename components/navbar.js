@@ -9,7 +9,8 @@ let navbar = () => {
             <div><button>Skills</button></div>
             <div><button>Projects</button></div>
             <div><button>Contact</button></div>
-            <div><button>Resume</button></div>
+            <div><a href="https://drive.google.com/file/d/1BjBdLoDuAGOOCp55gpwQ_Ap3tTu12CW2/view?usp=sharing"
+            download="Kishore-Jeelugula-Resume" target="_blank"><button>Resume</button></a></div>
         </div>
     `
 }

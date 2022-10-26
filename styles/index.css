@@ -38,7 +38,8 @@
     justify-content: space-evenly;
 }
 
-.buttons-nav>div>button {
+.buttons-nav>div>button,
+.buttons-nav>div:nth-child(6)>a>button {
     background-color: transparent;
     border: none;
     border-radius: 5px;
@@ -50,6 +51,8 @@
     font-size: medium;
     font-weight: 600;
 }
+
+/* .buttons-nav>div:nth-child(6)>a>button {} */
 
 .buttons-nav>div>button:hover {
     border-radius: 5px;
