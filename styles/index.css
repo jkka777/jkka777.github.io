@@ -276,6 +276,10 @@
         /* border: 1px solid black; */
     }
 
+    .name-logo>h2 {
+        font-size: 22;
+    }
+
     .buttons-nav {
         width: 92%;
         display: flex;
