@@ -82,7 +82,7 @@ let toHomePage = () => {
 
     mainContent.style.height = '980px';
 
-}
+};
 
 catchElem('.buttons-nav>div:nth-child(1)>button').addEventListener('click', toHomePage);
 
@@ -575,7 +575,7 @@ let projectsPage = () => {
 
     catchElem('.buttons-nav>div:nth-child(6)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
-}
+};
 
 catchElem('.buttons-nav>div:nth-child(4)>button').addEventListener('click', projectsPage);
 
@@ -584,3 +584,24 @@ window.onclick = (event) => {
         modal.style.display = "none";
     }
 };
+
+let contactPage = () => {
+
+    mainContent.innerHTML = '';
+
+    let contact_div = createElem('div');
+    contact_div.setAttribute('class', 'contact-content');
+
+    let div1 = createElem('div');
+
+    let contact_text = createElem('h2');
+    contact_text.textContent = 'Contact Me';
+
+    div1.append(contact_text);
+
+    contact_div.append(div1);
+
+    mainContent.append(contact_div);
+}
+
+catchElem('.buttons-nav>div:nth-child(5)>button').addEventListener('click', contactPage);
