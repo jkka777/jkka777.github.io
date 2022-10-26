@@ -675,6 +675,20 @@ let contactPage = () => {
     contact_div.append(div1, div2);
 
     mainContent.append(contact_div);
+
+    // styling part //
+
+    catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(1)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(2)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(3)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(4)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(6)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 }
 
 catchElem('.buttons-nav>div:nth-child(5)>button').addEventListener('click', contactPage);

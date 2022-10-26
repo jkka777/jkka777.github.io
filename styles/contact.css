@@ -56,7 +56,7 @@
     width: 45%;
     height: 70%;
     margin: auto;
-    border: 8px solid yellow;
+    /* border: 8px solid yellow; */
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border-radius: 60px;
 }
@@ -113,4 +113,146 @@
 #git>a:hover,
 #phone>p>a:hover {
     text-decoration: underline;
+}
+
+/* medium screens */
+
+@media all and (min-width:768px) and (max-width:1023px) {
+
+    .contact-content {
+        width: 100%;
+        height: 100%;
+        margin-top: 60px;
+        padding-top: 40px;
+        /* border: 1px solid black; */
+    }
+
+    .contact-content>div:nth-child(1) {
+        width: 40%;
+    }
+
+    .contact-content>div:nth-child(1)>h2 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .contact-content>div:nth-child(2) {
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+        display: inline-block;
+        gap: 10px;
+        /* border: 1px solid black; */
+    }
+
+    .contact-content>div:nth-child(2)>div:nth-child(1) {
+        width: 80%;
+        height: 40%;
+        padding: 60px 60px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 60px;
+        /* border: 1px solid black; */
+    }
+
+    .contact-content>div:nth-child(2)>div:nth-child(1)>p {
+        font-size: 30px;
+    }
+
+    .contact-content>div:nth-child(2)>div:nth-child(2) {
+        width: 80%;
+        height: 50%;
+        margin: auto;
+        margin-top: 40px;
+        /* border: 8px solid yellow; */
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 60px;
+    }
+}
+
+/* small screens */
+
+@media all and (min-width:321px) and (max-width:767px) {
+
+    .contact-content {
+        margin-top: 40px;
+    }
+
+    .contact-content>div:nth-child(1) {
+        width: 50%;
+        height: 35px;
+    }
+
+    .contact-content>div:nth-child(1)>h2 {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .contact-content>div:nth-child(2) {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        display: inline-block;
+        gap: 10px;
+        /* border: 1px solid black; */
+    }
+
+    .contact-content>div:nth-child(2) {
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+        display: inline-block;
+        gap: 30px;
+        /* border: 1px solid black; */
+    }
+
+    .contact-content>div:nth-child(2)>div:nth-child(1) {
+        width: 90%;
+        height: 40%;
+        padding: 40px 40px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 60px;
+        /* border: 1px solid black; */
+    }
+
+    .contact-content>div:nth-child(2)>div:nth-child(1)>p {
+        font-size: 17px;
+    }
+
+    .contact-content>div:nth-child(2)>div:nth-child(2) {
+        width: 95%;
+        height: 60%;
+        margin: auto;
+        margin-top: 40px;
+        /* border: 8px solid yellow; */
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        border-radius: 60px;
+    }
+
+    .contact-content>div:nth-child(2)>div:nth-child(2)>div:nth-child(1),
+    .contact-content>div:nth-child(2)>div:nth-child(2)>div:nth-child(2),
+    .contact-content>div:nth-child(2)>div:nth-child(2)>div:nth-child(3),
+    .contact-content>div:nth-child(2)>div:nth-child(2)>div:nth-child(4) {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding-left: 20px;
+        /* border: 1px solid black; */
+    }
+
+    #mail>img,
+    #link>img {
+        width: 50px;
+        height: 25px;
+        /* border: 1px solid black; */
+    }
+
+    #git>img,
+    #phone>img {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        /* border: 1px solid black; */
+    }
 }
