@@ -599,7 +599,80 @@ let contactPage = () => {
 
     div1.append(contact_text);
 
-    contact_div.append(div1);
+    let div2 = createElem('div');
+
+    let inner_div1 = createElem('div');
+
+    let text1 = createElem('p');
+    text1.textContent = 'Want to collaborate?';
+    let text2 = createElem('p');
+    text2.textContent = 'Contact me through these mediums.';
+    let text3 = createElem('p');
+    text3.textContent = 'Looking forward to work with you.';
+
+    inner_div1.append(text1, text2, text3);
+
+    let inner_div2 = createElem('div');
+
+    let mail_div = createElem('div');
+    mail_div.setAttribute('id', 'mail');
+
+    let mail_img = createElem('img');
+    mail_img.src = 'https://imgs.search.brave.com/3x52lJTuzSqvhNX62-kBlsNirNd2DyEJo6zM6L0a6D8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9sb2dv/bG9vay5uZXQvd3At/Y29udGVudC91cGxv/YWRzLzIwMjEvMDYv/R21haWwtTG9nby5w/bmc';
+
+    let mail_p = createElem('p');
+    let mail_link = createElem('a');
+    mail_link.href = 'mailto:abhiram.kishore@gmail.com';
+    mail_link.textContent = 'abhiram.kishore@gmail.com';
+    mail_p.append(mail_link);
+
+    mail_div.append(mail_img, mail_p);
+
+    let link_div = createElem('div');
+    link_div.setAttribute('id', 'link');
+
+    let link_img = createElem('img');
+    link_img.src = 'https://imgs.search.brave.com/YKkPwjTZAmihPFmFtO63AP9HDmfSG4xOYmLh0agmFj8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9teWNs/b3VkZG9vci5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTkv/MTEvTGlua2VkaW4t/bG9nby5wbmc';
+
+    let link_link = createElem('a');
+    link_link.textContent = 'LinkedIn';
+    link_link.href = 'https://www.linkedin.com/in/kishore-j-8986bb235/';
+    link_link.target = '_blank';
+
+    link_div.append(link_img, link_link);
+
+    let git_div = createElem('div');
+    git_div.setAttribute('id', 'git');
+
+    let git_img = createElem('img');
+    git_img.src = 'https://imgs.search.brave.com/J05hwr08spi9HzppBXefubcbewtnrMUwIV1BH-rzquk/rs:fit:1200:1200:1/g:ce/aHR0cDovL3BuZ2lt/Zy5jb20vdXBsb2Fk/cy9naXRodWIvZ2l0/aHViX1BORzQwLnBu/Zw';
+
+    let git_link = createElem('a');
+    git_link.textContent = 'GitHub';
+    git_link.href = 'https://github.com/jkka777';
+    git_link.target = '_blank';
+
+    git_div.append(git_img, git_link);
+
+    let phn_div = createElem('div');
+    phn_div.setAttribute('id', 'phone');
+
+    let phn_img = createElem('img');;
+    phn_img.src = 'https://imgs.search.brave.com/3SiNuDB6B8Lt0iRX9f9-oc2b2KZ3xgfnnzIa9p6WtqE/rs:fit:512:512:1/g:ce/aHR0cDovL3d3dy5j/bGlwYXJ0YmVzdC5j/b20vY2xpcGFydHMv/bmNFL0I3WC9uY0VC/N1hnamkucG5n';
+
+    let phn_p = createElem('p');
+    let phn_link = createElem('a');
+    phn_link.href = 'tel:+919440940244';
+    phn_link.textContent = '+91 9440 940 244';
+    phn_p.append(phn_link);
+
+    phn_div.append(phn_img, phn_p);
+
+    inner_div2.append(mail_div, link_div, git_div, phn_div);
+
+    div2.append(inner_div1, inner_div2);
+
+    contact_div.append(div1, div2);
 
     mainContent.append(contact_div);
 }

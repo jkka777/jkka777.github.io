@@ -1,10 +1,116 @@
 .contact-content {
     width: 100%;
-    height: 100%;
+    height: 80%;
     margin-top: 60px;
-    border: 1px solid black;
+    padding-top: 80px;
+    /* border: 1px solid black; */
 }
 
-.contact-content>div {
-    
+.contact-content>div:nth-child(1) {
+    width: 20%;
+    height: 60px;
+    margin: auto;
+    /* margin-bottom: 40px; */
+    text-align: center;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.contact-content>div:nth-child(1)>h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.contact-content>div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid black; */
+}
+
+.contact-content>div:nth-child(2)>div:nth-child(1) {
+    width: 48%;
+    height: 75%;
+    margin: auto;
+    padding: 80px 80px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 60px;
+    /* border: 1px solid black; */
+}
+
+.contact-content>div:nth-child(2)>div:nth-child(1)>p {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 400;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.contact-content>div:nth-child(2)>div:nth-child(2) {
+    width: 45%;
+    height: 70%;
+    margin: auto;
+    border: 8px solid yellow;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 60px;
+}
+
+.contact-content>div:nth-child(2)>div:nth-child(2)>div {
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.contact-content>div:nth-child(2)>div:nth-child(2)>div:nth-child(1),
+.contact-content>div:nth-child(2)>div:nth-child(2)>div:nth-child(2),
+.contact-content>div:nth-child(2)>div:nth-child(2)>div:nth-child(3),
+.contact-content>div:nth-child(2)>div:nth-child(2)>div:nth-child(4) {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding-left: 80px;
+    /* border: 1px solid black; */
+}
+
+#mail>img,
+#link>img {
+    width: 100px;
+    height: 60px;
+    /* border: 1px solid black; */
+}
+
+#git>img,
+#phone>img {
+    width: 60px;
+    height: 60px;
+    margin-left: 24px;
+}
+
+#mail>p>a,
+#link>a {
+    width: 80%;
+    text-decoration: none;
+    color: black;
+    /* border: 1px solid black; */
+}
+
+#git>a,
+#phone>p>a {
+    padding-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#mail>p>a:hover,
+#link>a:hover,
+#git>a:hover,
+#phone>p>a:hover {
+    text-decoration: underline;
 }
