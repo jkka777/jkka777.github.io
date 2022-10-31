@@ -59,7 +59,7 @@ let toHomePage = () => {
     pic_div.setAttribute('class', 'profile-img-div');
 
     let pic_img = createElem('img');
-    pic_img.src = 'https://drive.google.com/uc?id=1i0qjpzeysHRpdtKXzrv-PEmB1MbpFBW7';
+    pic_img.src = 'util/profile.png';
     pic_img.setAttribute('alt', "Kishore's image");
 
     pic_div.append(pic_img);
@@ -276,7 +276,7 @@ let projectsPage = () => {
     p1_name.textContent = 'Bewakoof.com Clone';
 
     let p1_img = createElem('img');
-    p1_img.src = 'https://drive.google.com/uc?id=1EQJK1KPxxlWmQSaNqm2OwJCnP6m2XE6f';
+    p1_img.src = 'util/p1_img.png';
 
     let p1_innerDiv = createElem('div');
 
@@ -360,7 +360,7 @@ let projectsPage = () => {
     p2_name.textContent = 'Cronometer.com Clone';
 
     let p2_img = createElem('img');
-    p2_img.src = 'https://drive.google.com/uc?id=1DHrCiyfnoetQw6hizkZD-Z_T4ymrIkYZ';
+    p2_img.src = 'util/p2_img.png';
 
     let p2_innerDiv = createElem('div');
 
@@ -444,7 +444,7 @@ let projectsPage = () => {
     p3_name.textContent = 'Clockify-me Clone';
 
     let p3_img = createElem('img');
-    p3_img.src = 'https://drive.google.com/uc?id=1Xqh3opKgVIpZvkSrM4vjNc-7TjvCHBKN';
+    p3_img.src = 'util/p3_img.png';
 
     let p3_innerDiv = createElem('div');
 

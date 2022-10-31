@@ -9,7 +9,7 @@ let navbar = () => {
             <div><button>Skills</button></div>
             <div><button>Projects</button></div>
             <div><button>Contact</button></div>
-            <div><a href="download/Kishore-Jeelugula-Resume.pdf" download="Kishore-Jeelugula-Resume"><button>Resume</button></a></div>
+            <div><a href="util/Kishore-Jeelugula-Resume.pdf" download="Kishore-Jeelugula-Resume"><button>Resume</button></a></div>
         </div>
     `
 }
