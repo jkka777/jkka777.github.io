@@ -254,20 +254,11 @@ catchElem('.buttons-nav>div:nth-child(3)>button').addEventListener('click', skil
 
 /*<===============> --------- projects page script -------- <===================>*/
 
-let modal = createElem('div');
-modal.setAttribute('class', 'modal');
-modal.style.display = 'none';
-
-let modal_content = createElem('div');
-modal_content.setAttribute('class', 'modal-content');
-
-let closeModal = () => modal.style.display = 'none';
-
 let projectsPage = () => {
 
     mainContent.innerHTML = '';
 
-    mainContent.style.height = '1100px';
+    mainContent.style.height = '2200px';
 
     let prj_content = createElem('div');
     prj_content.setAttribute('class', 'project-content');
@@ -277,6 +268,9 @@ let projectsPage = () => {
     /*----------------------------------------project 1----------------------------------------*/
 
     let p1 = createElem('div');
+
+    let p1_1 = createElem('div');
+    p1_1.setAttribute('id', 'project-box1');
 
     let p1_name = createElem('h4');
     p1_name.textContent = 'Bewakoof.com Clone';
@@ -297,79 +291,70 @@ let projectsPage = () => {
     repo_link1.addEventListener('click', () => window.open('https://github.com/jkka777/bewakoof-clone'));
     repo_link1.style.cssText += 'height:26px;width:26px;cursor:pointer';
 
-    let desc1 = createElem('button');
-    desc1.textContent = 'Description';
+    p1_innerDiv.append(p1_link, repo_link1);
 
-    desc1.addEventListener('click', () => {
+    p1_1.append(p1_name, p1_img, p1_innerDiv);
 
-        modal.style.display = 'block';
-        modal_content.innerHTML = '';
+    let p1_2 = createElem('div');
+    p1_2.setAttribute('id', 'project-box2');
 
-        let div1 = createElem('div');
-        let project_name = createElem('h2');
-        project_name.textContent = 'bewakoof.com'
+    let div1 = createElem('div');
+    let project_details = createElem('h4');
+    project_details.textContent = 'Features';
+    project_details.style.textDecoration = 'underline';
 
-        let close_modal = createElem('button');
-        close_modal.textContent = 'Close';
-        close_modal.style.cursor = 'pointer';
-        close_modal.addEventListener('click', () => closeModal());
+    let project_featuers = createElem('p');
+    project_featuers.textContent = 'bewakoof.com is an online shopping website where one can shop for clothes and accessories for men and women. This clone has the features of SignUp, Login, Shop Mens clothes, Shop Womens clothes and Add to cart functationality, Payments'
 
-        div1.append(project_name, close_modal);
+    div1.append(project_details, project_featuers);
 
-        let div2 = createElem('div');
-        let project_details = createElem('h4');
-        project_details.textContent = 'Features';
-        project_details.style.textDecoration = 'underline';
+    let div2 = createElem('div');
 
-        let project_featuers = createElem('p');
-        project_featuers.textContent = 'bewakoof.com is an online shopping website where one can shop for clothes and accessories for men and women. This clone has the features of SignUp, Login, Shop Mens clothes, Shop Womens clothes and Add to cart functationality, Payments'
+    let pt_1 = createElem("h4");
+    pt_1.textContent = 'Languages';
+    pt_1.style.textDecoration = 'underline';
 
-        div2.append(project_details, project_featuers);
+    let lang_div = createElem('div');
+    lang_div.setAttribute('id', 'lang-div-1');
+    let html_logo = createElem('img');
+    html_logo.src = 'https://imgs.search.brave.com/NzopLX68q-PUcI2j3DhmRmie1ffbO6NbFkdgm-OQY0o/rs:fit:900:925:1/g:ce/aHR0cHM6Ly93d3cu/Y2xpcGFydGtleS5j/b20vbXBuZ3MvbS8y/MTAtMjEwNDcwNV9o/dG1sLWxvZ28tcG5n/LXRyYW5zcGFyZW50/LWJhY2tncm91bmQu/cG5n';
+    // html_logo.style.height = '80px';
+    // html_logo.style.width = '80px';
 
-        let div3 = createElem('div');
+    let css_logo = createElem('img');
+    css_logo.src = 'https://imgs.search.brave.com/4cd39QU53u_hoNtEFcemVx8EhgXvYU66pGB-wSVsrhA/rs:fit:1181:1200:1/g:ce/aHR0cDovL2Jsb2cu/YnJha29uaWVja2ku/cGwvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDIvY3NzLWxv/Z28ucG5n';
 
-        let pt_1 = createElem("h4");
-        pt_1.textContent = 'Languages';
-        pt_1.style.textDecoration = 'underline';
+    let js_logo = createElem('img');
+    js_logo.src = 'https://imgs.search.brave.com/3K6TMZFm5JnfHcMIftWgrgHnWR02dd1Es9p4DtGAYIc/rs:fit:1024:768:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUxOTEz/OTkuanBn';
 
-        let lang_div = createElem('div');
-        let html_logo = createElem('img');
-        html_logo.src = 'https://imgs.search.brave.com/NzopLX68q-PUcI2j3DhmRmie1ffbO6NbFkdgm-OQY0o/rs:fit:900:925:1/g:ce/aHR0cHM6Ly93d3cu/Y2xpcGFydGtleS5j/b20vbXBuZ3MvbS8y/MTAtMjEwNDcwNV9o/dG1sLWxvZ28tcG5n/LXRyYW5zcGFyZW50/LWJhY2tncm91bmQu/cG5n';
+    lang_div.append(html_logo, css_logo, js_logo);
 
-        let css_logo = createElem('img');
-        css_logo.src = 'https://imgs.search.brave.com/4cd39QU53u_hoNtEFcemVx8EhgXvYU66pGB-wSVsrhA/rs:fit:1181:1200:1/g:ce/aHR0cDovL2Jsb2cu/YnJha29uaWVja2ku/cGwvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDIvY3NzLWxv/Z28ucG5n';
+    let pt_2 = createElem('h4');
+    pt_2.textContent = 'Tools';
+    pt_2.style.textDecoration = 'underline';
 
-        let js_logo = createElem('img');
-        js_logo.src = 'https://imgs.search.brave.com/3K6TMZFm5JnfHcMIftWgrgHnWR02dd1Es9p4DtGAYIc/rs:fit:1024:768:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUxOTEz/OTkuanBn';
+    let tool_div = createElem('div');
+    tool_div.setAttribute('id', 'tool-div-1');
+    let vs_code_logo = createElem('img');
+    vs_code_logo.src = 'https://imgs.search.brave.com/6047vQ4hJAuOrjiBbBA4HEc4OyJ0-hXbJYvc-Jk29us/rs:fit:777:774:1/g:ce/aHR0cHM6Ly9tb2Jp/bGVtYW5jZXJibG9n/LmJsb2IuY29yZS53/aW5kb3dzLm5ldC9i/bG9nLzIwMjAvMDgv/dnMtY29kZS1sb2dv/LXRyYW5zcC5wbmc';
 
-        lang_div.append(html_logo, css_logo, js_logo);
+    let git_logo = createElem('img');
+    git_logo.src = 'https://imgs.search.brave.com/ikcrhKQN5Ni60H22fPzkPeFZsD0oUqDTRZdQputksE8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvZ2l0aHViL2dp/dGh1Yl9QTkc0MC5w/bmc';
 
-        let pt_2 = createElem('h4');
-        pt_2.textContent = 'Tools';
-        pt_2.style.textDecoration = 'underline';
+    tool_div.append(vs_code_logo, git_logo);
 
-        let tool_div = createElem('div');
-        let vs_code_logo = createElem('img');
-        vs_code_logo.src = 'https://imgs.search.brave.com/6047vQ4hJAuOrjiBbBA4HEc4OyJ0-hXbJYvc-Jk29us/rs:fit:777:774:1/g:ce/aHR0cHM6Ly9tb2Jp/bGVtYW5jZXJibG9n/LmJsb2IuY29yZS53/aW5kb3dzLm5ldC9i/bG9nLzIwMjAvMDgv/dnMtY29kZS1sb2dv/LXRyYW5zcC5wbmc';
+    div2.append(pt_1, lang_div, pt_2, tool_div);
 
-        let git_logo = createElem('img');
-        git_logo.src = 'https://imgs.search.brave.com/ikcrhKQN5Ni60H22fPzkPeFZsD0oUqDTRZdQputksE8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvZ2l0aHViL2dp/dGh1Yl9QTkc0MC5w/bmc';
+    p1_2.append(div1, div2);
 
-        tool_div.append(vs_code_logo, git_logo);
-
-        div3.append(pt_1, lang_div, pt_2, tool_div);
-
-        modal_content.append(div1, div2, div3);
-        modal.append(modal_content);
-    });
-
-    p1_innerDiv.append(p1_link, repo_link1, desc1);
-
-    p1.append(p1_name, p1_img, p1_innerDiv);
+    p1.append(p1_1, p1_2);
 
     /*----------------------------------------project 2----------------------------------------*/
 
     let p2 = createElem('div');
+
+    let p2_1 = createElem('div');
+    p2_1.setAttribute('id', 'project-box1');
 
     let p2_name = createElem('h4');
     p2_name.textContent = 'Cronometer.com Clone';
@@ -390,78 +375,71 @@ let projectsPage = () => {
     repo_link2.addEventListener('click', () => window.open('https://github.com/jkka777/cronometer-clone'));
     repo_link2.style.cssText += 'height:26px;width:26px;cursor:pointer';
 
-    let desc2 = createElem('button');
-    desc2.textContent = 'Description';
+    p2_innerDiv.append(p2_link, repo_link2);
 
-    desc2.addEventListener('click', () => {
-        modal.style.display = 'block';
-        modal_content.innerHTML = '';
+    p2_1.append(p2_name, p2_img, p2_innerDiv);
 
-        let div1 = createElem('div');
-        let project_name = createElem('h2');
-        project_name.textContent = 'cronometer.com'
+    let p2_2 = createElem('div');
+    p2_2.setAttribute('id', 'project-box2');
 
-        let close_modal = createElem('button');
-        close_modal.textContent = 'Close';
-        close_modal.style.cursor = 'pointer';
-        close_modal.addEventListener('click', () => closeModal());
+    let div2_1 = createElem('div');
 
-        div1.append(project_name, close_modal);
+    let project_details_2 = createElem('h4');
+    project_details_2.textContent = 'Features';
+    project_details_2.style.textDecoration = 'underline';
 
-        let div2 = createElem('div');
-        let project_details = createElem('h4');
-        project_details.textContent = 'Features';
-        project_details.style.textDecoration = 'underline';
+    let project_featuers_2 = createElem('p');
+    project_featuers_2.textContent = 'cronometer is an application where one can track the nutrition and health wellness. We can register our food intake, measure calories and control the diet. This clone features Signup, Login, Blogs, Support, Food tracking.'
 
-        let project_featuers = createElem('p');
-        project_featuers.textContent = 'cronometer is an application where one can track the nutrition and health wellness. We can register our food intake, measure calories and control the diet. This clone features Signup, Login, Blogs, Support, Food tracking.'
+    div2_1.append(project_details_2, project_featuers_2);
 
-        div2.append(project_details, project_featuers);
+    let div2_2 = createElem('div');
 
-        let div3 = createElem('div');
+    let pt_2_1 = createElem("h4");
+    pt_2_1.textContent = 'Languages';
+    pt_2_1.style.textDecoration = 'underline';
 
-        let pt_1 = createElem("h4");
-        pt_1.textContent = 'Languages';
-        pt_1.style.textDecoration = 'underline';
+    let lang_div_2 = createElem('div');
+    lang_div_2.setAttribute('id', 'lang-div-1');
 
-        let lang_div = createElem('div');
-        let html_logo = createElem('img');
-        html_logo.src = 'https://imgs.search.brave.com/NzopLX68q-PUcI2j3DhmRmie1ffbO6NbFkdgm-OQY0o/rs:fit:900:925:1/g:ce/aHR0cHM6Ly93d3cu/Y2xpcGFydGtleS5j/b20vbXBuZ3MvbS8y/MTAtMjEwNDcwNV9o/dG1sLWxvZ28tcG5n/LXRyYW5zcGFyZW50/LWJhY2tncm91bmQu/cG5n';
+    let html_logo_2 = createElem('img');
+    html_logo_2.src = 'https://imgs.search.brave.com/NzopLX68q-PUcI2j3DhmRmie1ffbO6NbFkdgm-OQY0o/rs:fit:900:925:1/g:ce/aHR0cHM6Ly93d3cu/Y2xpcGFydGtleS5j/b20vbXBuZ3MvbS8y/MTAtMjEwNDcwNV9o/dG1sLWxvZ28tcG5n/LXRyYW5zcGFyZW50/LWJhY2tncm91bmQu/cG5n';
 
-        let css_logo = createElem('img');
-        css_logo.src = 'https://imgs.search.brave.com/4cd39QU53u_hoNtEFcemVx8EhgXvYU66pGB-wSVsrhA/rs:fit:1181:1200:1/g:ce/aHR0cDovL2Jsb2cu/YnJha29uaWVja2ku/cGwvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDIvY3NzLWxv/Z28ucG5n';
+    let css_logo_2 = createElem('img');
+    css_logo_2.src = 'https://imgs.search.brave.com/4cd39QU53u_hoNtEFcemVx8EhgXvYU66pGB-wSVsrhA/rs:fit:1181:1200:1/g:ce/aHR0cDovL2Jsb2cu/YnJha29uaWVja2ku/cGwvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDIvY3NzLWxv/Z28ucG5n';
 
-        let js_logo = createElem('img');
-        js_logo.src = 'https://imgs.search.brave.com/3K6TMZFm5JnfHcMIftWgrgHnWR02dd1Es9p4DtGAYIc/rs:fit:1024:768:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUxOTEz/OTkuanBn';
+    let js_logo_2 = createElem('img');
+    js_logo_2.src = 'https://imgs.search.brave.com/3K6TMZFm5JnfHcMIftWgrgHnWR02dd1Es9p4DtGAYIc/rs:fit:1024:768:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUxOTEz/OTkuanBn';
 
-        lang_div.append(html_logo, css_logo, js_logo);
+    lang_div_2.append(html_logo_2, css_logo_2, js_logo_2);
 
-        let pt_2 = createElem('h4');
-        pt_2.textContent = 'Tools';
-        pt_2.style.textDecoration = 'underline';
+    let pt_2_2 = createElem('h4');
+    pt_2_2.textContent = 'Tools';
+    pt_2_2.style.textDecoration = 'underline';
 
-        let tool_div = createElem('div');
-        let vs_code_logo = createElem('img');
-        vs_code_logo.src = 'https://imgs.search.brave.com/6047vQ4hJAuOrjiBbBA4HEc4OyJ0-hXbJYvc-Jk29us/rs:fit:777:774:1/g:ce/aHR0cHM6Ly9tb2Jp/bGVtYW5jZXJibG9n/LmJsb2IuY29yZS53/aW5kb3dzLm5ldC9i/bG9nLzIwMjAvMDgv/dnMtY29kZS1sb2dv/LXRyYW5zcC5wbmc';
+    let tool_div_2 = createElem('div');
+    tool_div_2.setAttribute('id', 'tool-div-1');
+    let vs_code_logo_2 = createElem('img');
+    vs_code_logo_2.src = 'https://imgs.search.brave.com/6047vQ4hJAuOrjiBbBA4HEc4OyJ0-hXbJYvc-Jk29us/rs:fit:777:774:1/g:ce/aHR0cHM6Ly9tb2Jp/bGVtYW5jZXJibG9n/LmJsb2IuY29yZS53/aW5kb3dzLm5ldC9i/bG9nLzIwMjAvMDgv/dnMtY29kZS1sb2dv/LXRyYW5zcC5wbmc';
 
-        let git_logo = createElem('img');
-        git_logo.src = 'https://imgs.search.brave.com/ikcrhKQN5Ni60H22fPzkPeFZsD0oUqDTRZdQputksE8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvZ2l0aHViL2dp/dGh1Yl9QTkc0MC5w/bmc';
+    let git_logo_2 = createElem('img');
+    git_logo_2.src = 'https://imgs.search.brave.com/ikcrhKQN5Ni60H22fPzkPeFZsD0oUqDTRZdQputksE8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvZ2l0aHViL2dp/dGh1Yl9QTkc0MC5w/bmc';
 
-        tool_div.append(vs_code_logo, git_logo);
+    tool_div_2.append(vs_code_logo_2, git_logo_2);
 
-        div3.append(pt_1, lang_div, pt_2, tool_div);
+    div2_2.append(pt_2_1, lang_div_2, pt_2_2, tool_div_2);
 
-        modal_content.append(div1, div2, div3);
-        modal.append(modal_content);
-    });
+    p2_2.append(div2_1, div2_2);
 
-    p2_innerDiv.append(p2_link, repo_link2, desc2);
-
-    p2.append(p2_name, p2_img, p2_innerDiv);
+    p2.append(p2_1, p2_2);
 
     /*----------------------------------------project 3----------------------------------------*/
 
     let p3 = createElem('div');
+
+    let p3_1 = createElem('div');
+    p3_1.setAttribute('id', 'project-box1');
+
     let p3_name = createElem('h4');
     p3_name.textContent = 'Clockify-me Clone';
 
@@ -481,87 +459,75 @@ let projectsPage = () => {
     repo_link3.addEventListener('click', () => window.open('https://github.com/jkka777/clockify-clone'));
     repo_link3.style.cssText += 'height:26px;width:26px;cursor:pointer';
 
-    let desc3 = createElem('button');
-    desc3.textContent = 'Description';
+    p3_innerDiv.append(p3_link, repo_link3);
 
-    desc3.addEventListener('click', () => {
-        modal.style.display = 'block';
-        modal_content.innerHTML = '';
+    p3_1.append(p3_name, p3_img, p3_innerDiv);
 
-        let div1 = createElem('div');
-        let project_name = createElem('h2');
-        project_name.textContent = 'Clockify.me'
+    let p3_2 = createElem('div');
+    p3_2.setAttribute('id', 'project-box2');
 
-        let close_modal = createElem('button');
-        close_modal.textContent = 'Close';
-        close_modal.style.cursor = 'pointer';
-        close_modal.addEventListener('click', () => closeModal());
+    let div3_1 = createElem('div');
 
-        div1.append(project_name, close_modal);
+    let project_details_3 = createElem('h4');
+    project_details_3.textContent = 'Features';
+    project_details_3.style.textDecoration = 'underline';
 
-        let div2 = createElem('div');
-        let project_details = createElem('h4');
-        project_details.textContent = 'Features';
-        project_details.style.textDecoration = 'underline';
+    let project_featuers_3 = createElem('p');
+    project_featuers_3.textContent = 'Clockify.me is a time tracking application, where an user can keep track of time for the projects and its related management. This clone features Signup, Login, Dashboard, Project management, Payments.'
 
-        let project_featuers = createElem('p');
-        project_featuers.textContent = 'Clockify.me is a time tracking application, where an user can keep track of time for the projects and its related management. This clone features Signup, Login, Dashboard, Project management, Payments.'
+    div3_1.append(project_details_3, project_featuers_3);
 
-        div2.append(project_details, project_featuers);
+    let div3_2 = createElem('div');
 
-        let div3 = createElem('div');
+    let pt_3_1 = createElem("h4");
+    pt_3_1.textContent = 'Languages';
+    pt_3_1.style.textDecoration = 'underline';
 
-        let pt_1 = createElem("h4");
-        pt_1.textContent = 'Languages';
-        pt_1.style.textDecoration = 'underline';
+    let lang_div_3 = createElem('div');
+    lang_div_3.setAttribute('id', 'lang-div-1');
 
-        let lang_div = createElem('div');
-        let html_logo = createElem('img');
-        html_logo.src = 'https://imgs.search.brave.com/NzopLX68q-PUcI2j3DhmRmie1ffbO6NbFkdgm-OQY0o/rs:fit:900:925:1/g:ce/aHR0cHM6Ly93d3cu/Y2xpcGFydGtleS5j/b20vbXBuZ3MvbS8y/MTAtMjEwNDcwNV9o/dG1sLWxvZ28tcG5n/LXRyYW5zcGFyZW50/LWJhY2tncm91bmQu/cG5n';
+    let html_logo_3 = createElem('img');
+    html_logo_3.src = 'https://imgs.search.brave.com/NzopLX68q-PUcI2j3DhmRmie1ffbO6NbFkdgm-OQY0o/rs:fit:900:925:1/g:ce/aHR0cHM6Ly93d3cu/Y2xpcGFydGtleS5j/b20vbXBuZ3MvbS8y/MTAtMjEwNDcwNV9o/dG1sLWxvZ28tcG5n/LXRyYW5zcGFyZW50/LWJhY2tncm91bmQu/cG5n';
 
-        let css_logo = createElem('img');
-        css_logo.src = 'https://imgs.search.brave.com/4cd39QU53u_hoNtEFcemVx8EhgXvYU66pGB-wSVsrhA/rs:fit:1181:1200:1/g:ce/aHR0cDovL2Jsb2cu/YnJha29uaWVja2ku/cGwvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDIvY3NzLWxv/Z28ucG5n';
+    let css_logo_3 = createElem('img');
+    css_logo_3.src = 'https://imgs.search.brave.com/4cd39QU53u_hoNtEFcemVx8EhgXvYU66pGB-wSVsrhA/rs:fit:1181:1200:1/g:ce/aHR0cDovL2Jsb2cu/YnJha29uaWVja2ku/cGwvd3AtY29udGVu/dC91cGxvYWRzLzIw/MTUvMDIvY3NzLWxv/Z28ucG5n';
 
-        let js_logo = createElem('img');
-        js_logo.src = 'https://imgs.search.brave.com/3K6TMZFm5JnfHcMIftWgrgHnWR02dd1Es9p4DtGAYIc/rs:fit:1024:768:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUxOTEz/OTkuanBn';
+    let js_logo_3 = createElem('img');
+    js_logo_3.src = 'https://imgs.search.brave.com/3K6TMZFm5JnfHcMIftWgrgHnWR02dd1Es9p4DtGAYIc/rs:fit:1024:768:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDUxOTEz/OTkuanBn';
 
-        lang_div.append(html_logo, css_logo, js_logo);
+    lang_div_3.append(html_logo_3, css_logo_3, js_logo_3);
 
-        let pt_2 = createElem('h4');
-        pt_2.textContent = 'Tools';
-        pt_2.style.textDecoration = 'underline';
+    let pt_3_2 = createElem('h4');
+    pt_3_2.textContent = 'Tools';
+    pt_3_2.style.textDecoration = 'underline';
 
-        let tool_div = createElem('div');
-        let vs_code_logo = createElem('img');
-        vs_code_logo.src = 'https://imgs.search.brave.com/6047vQ4hJAuOrjiBbBA4HEc4OyJ0-hXbJYvc-Jk29us/rs:fit:777:774:1/g:ce/aHR0cHM6Ly9tb2Jp/bGVtYW5jZXJibG9n/LmJsb2IuY29yZS53/aW5kb3dzLm5ldC9i/bG9nLzIwMjAvMDgv/dnMtY29kZS1sb2dv/LXRyYW5zcC5wbmc';
+    let tool_div_3 = createElem('div');
+    tool_div_3.setAttribute('id', 'tool-div-1');
+    let vs_code_logo_3 = createElem('img');
+    vs_code_logo_3.src = 'https://imgs.search.brave.com/6047vQ4hJAuOrjiBbBA4HEc4OyJ0-hXbJYvc-Jk29us/rs:fit:777:774:1/g:ce/aHR0cHM6Ly9tb2Jp/bGVtYW5jZXJibG9n/LmJsb2IuY29yZS53/aW5kb3dzLm5ldC9i/bG9nLzIwMjAvMDgv/dnMtY29kZS1sb2dv/LXRyYW5zcC5wbmc';
 
-        let git_logo = createElem('img');
-        git_logo.src = 'https://imgs.search.brave.com/ikcrhKQN5Ni60H22fPzkPeFZsD0oUqDTRZdQputksE8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvZ2l0aHViL2dp/dGh1Yl9QTkc0MC5w/bmc';
+    let git_logo_3 = createElem('img');
+    git_logo_3.src = 'https://imgs.search.brave.com/ikcrhKQN5Ni60H22fPzkPeFZsD0oUqDTRZdQputksE8/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvZ2l0aHViL2dp/dGh1Yl9QTkc0MC5w/bmc';
 
-        let npm_logo = createElem('img');
-        npm_logo.src = 'https://imgs.search.brave.com/VNLK2rrw2Q-dn3-t_VSXLCccRvAAnQR-T5lo1JB5wDI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly90cmFi/cHVrY2lwLmdhbGxl/cnljZG4udnNhc3Nl/dHMuaW8vZXh0ZW5z/aW9ucy90cmFicHVr/Y2lwL3ZzY29kZS1u/cG0tc2NyaXB0cy8w/LjIuMS8xNTI2MjU1/NDY4MTIzL01pY3Jv/c29mdC5WaXN1YWxT/dHVkaW8uU2Vydmlj/ZXMuSWNvbnMuRGVm/YXVsdA';
+    let npm_logo_3 = createElem('img');
+    npm_logo_3.src = 'https://imgs.search.brave.com/VNLK2rrw2Q-dn3-t_VSXLCccRvAAnQR-T5lo1JB5wDI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly90cmFi/cHVrY2lwLmdhbGxl/cnljZG4udnNhc3Nl/dHMuaW8vZXh0ZW5z/aW9ucy90cmFicHVr/Y2lwL3ZzY29kZS1u/cG0tc2NyaXB0cy8w/LjIuMS8xNTI2MjU1/NDY4MTIzL01pY3Jv/c29mdC5WaXN1YWxT/dHVkaW8uU2Vydmlj/ZXMuSWNvbnMuRGVm/YXVsdA';
 
-        let heroku_logo = createElem('img');
-        heroku_logo.src = 'https://imgs.search.brave.com/watvs0-D6VRBmieALGXCEDsFVjnMIP_mw4nKppk2L4Y/rs:fit:300:300:1/g:ce/aHR0cHM6Ly93ZWJi/eWdyYW0uY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzEw/L2hvc3RpbmdfaGVy/b2t1LnBuZw';
+    let heroku_logo_3 = createElem('img');
+    heroku_logo_3.src = 'https://imgs.search.brave.com/watvs0-D6VRBmieALGXCEDsFVjnMIP_mw4nKppk2L4Y/rs:fit:300:300:1/g:ce/aHR0cHM6Ly93ZWJi/eWdyYW0uY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE3LzEw/L2hvc3RpbmdfaGVy/b2t1LnBuZw';
 
-        tool_div.append(vs_code_logo, git_logo, npm_logo, heroku_logo);
+    tool_div_3.append(vs_code_logo_3, git_logo_3, npm_logo_3, heroku_logo_3);
 
-        div3.append(pt_1, lang_div, pt_2, tool_div);
+    div3_2.append(pt_3_1, lang_div_3, pt_3_2, tool_div_3);
 
-        modal_content.append(div1, div2, div3);
-        modal.append(modal_content);
-    });
+    p3_2.append(div3_1, div3_2);
 
-    p3_innerDiv.append(p3_link, repo_link3, desc3);
-
-    p3.append(p3_name, p3_img, p3_innerDiv);
+    p3.append(p3_1, p3_2);
 
     prj_main.append(p1, p2, p3);
 
-    prj_content.append(prj_main, modal);
+    prj_content.append(prj_main);
 
     mainContent.append(prj_content);
-
 
     catchElem('.buttons-nav>div:nth-child(4)>button').style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
 
@@ -579,15 +545,11 @@ let projectsPage = () => {
 
 catchElem('.buttons-nav>div:nth-child(4)>button').addEventListener('click', projectsPage);
 
-window.onclick = (event) => {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-};
-
 let contactPage = () => {
 
     mainContent.innerHTML = '';
+
+    mainContent.style.height = '980px';
 
     let contact_div = createElem('div');
     contact_div.setAttribute('class', 'contact-content');

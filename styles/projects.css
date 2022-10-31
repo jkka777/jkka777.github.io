@@ -1,34 +1,46 @@
-.project-content {
-    width: 100%;
-    height: 100%;
-    margin-top: 90px;
-}
-
-.project-content>div {
-    width: 90%;
-    height: 80%;
-    margin: auto;
-    display: grid;
-    padding: 40px 40px;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+.content {
     /* border: 1px solid black; */
 }
 
-.project-content>div>div {
+.project-content {
+    width: 100%;
     height: 100%;
+    margin-top: 80px;
+    /* border: 1px solid black; */
+}
+
+.project-content>div {
+    width: 92%;
+    height: 80%;
+    margin: auto;
+    
+    padding-top: 20px;
+    border: 1px solid black;
+}
+
+.project-content>div>div {
+    height: 35%;
+    width: 99%;
+    margin: auto;
+    display: flex;
+    gap: 40px;
     border-radius: 26px;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     /* border: 1px solid black; */
 }
 
-.project-content>div>div>h4 {
+#project-box1 {
+    width: 60%;
+}
+
+#project-box1>h4 {
     font-weight: 600;
     text-align: center;
     margin: 6px 6px;
+    /* border: 1px solid black; */
 }
 
-.project-content>div>div>img {
+#project-box1>img {
     width: 98%;
     height: 80%;
     display: block;
@@ -37,7 +49,7 @@
     /* border-radius: 25px; */
 }
 
-.project-content>div>div>div {
+#project-box1>div {
     margin-top: 15px;
     display: flex;
     justify-content: space-evenly;
@@ -45,134 +57,64 @@
     gap: 40px;
 }
 
-.project-content>div>div>div>a {
+#project-box1>div>a {
     text-align: center;
     width: 110px;
-    font-size: 16px;
-    font-weight: 400;
+    height: 26px;
+    font-size: 15px;
+    font-weight: 600;
+    /* border: 1px solid black; */
+    color: black;
 }
 
-.project-content>div>div>div>a:hover,
-.project-content>div>div>div>button:hover {
-    border: 0.5px solid black;
+#project-box1>div>a:hover {
     border-radius: 6px;
     background-color: black;
     color: white;
 }
 
-.project-content>div>div>div>img {
+#project-box1>div>img {
     border-radius: 50%;
 }
 
-.project-content>div>div>div>button {
-    width: 100px;
-    height: 26px;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 400;
+#project-box2 {
+    width: 40%;
+    padding: 20px 20px;
 }
 
-/* Modal Styling */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 100;
-    top: 100;
-    /* overflow: auto; */
-    border-radius: 20px;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
+#project-box2>div:nth-child(1)>p {
+    text-align: justify;
+    line-height: 1.7;
+    /* border: 1px solid black; */
 }
 
-.modal-content {
-    width: 70%;
-    height: 100%;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 1);
-    padding: 20px;
-    animation-name: animatetop;
-    animation-duration: 600ms;
+#project-box2>div:nth-child(1) {
+    height: 30%;
+    width: 100%;
 }
 
-@keyframes animatetop {
-    from {
-        top: -400px;
-        opacity: 0;
-    }
-
-    to {
-        top: 100;
-        opacity: 1;
-    }
-}
-
-.modal-content>div:nth-child(1) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.modal-content>div:nth-child(1)>h2 {
-    font-weight: 600;
-    font-size: 26px;
-}
-
-.modal-content>div:nth-child(1)>button {
-    width: 80px;
-    height: 40px;
-    font-size: 17px;
-    font-weight: 600;
-    background-color: black;
-    color: white;
-    border: 0.5px solid black;
-    border-radius: 6px;
-}
-
-.modal-content>div:nth-child(1)>button:hover {
-    background-color: yellow;
-    color: black;
-    font-size: 17px;
-    font-weight: 600;
-    border: yellow;
-
-}
-
-.modal-content>div:nth-child(2),
-.modal-content>div:nth-child(3) {
-    display: inline-block;
-}
-
-.modal-content>div:nth-child(2)>h4,
-.modal-content>div:nth-child(3)>h4 {
+#project-box2>div>h4 {
     font-size: 20px;
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.modal-content>div:nth-child(2)>p {
-    line-height: 2;
-    text-align: justify;
-    font-size: 17px;
-}
-
-.modal-content>div:nth-child(3)>div {
-    width: 100%;
+#lang-div-1,
+#tool-div-1 {
     display: flex;
     gap: 40px;
 }
 
-.modal-content>div:nth-child(3)>div>img {
-    width: 80px;
-    height: 80px;
+#lang-div-1>img {
+    height: 60px;
+    width: 60px;
 }
 
-/* Modal Styling */
+#tool-div-1>img {
+    height: 60px;
+    width: 60px;
+}
 
 /* medium screens */
 
@@ -219,41 +161,6 @@
         align-items: center;
     }
 
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 100;
-        top: 300;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        border-radius: 20px;
-        border: 2px solid black;
-        /* background-color: rgb(0, 0, 0); */
-        background-color: rgba(255, 255, 255, 1);
-    }
-
-    .modal-content {
-        width: 100%;
-        height: 100%;
-        background-color: rgb(255, 255, 255, 1);
-        padding: 20px;
-    }
-
-    .modal-content>div:nth-child(1) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .modal-content>div:nth-child(2)>h4,
-    .modal-content>div:nth-child(3)>h4 {
-        font-size: 20px;
-        font-weight: 600;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
 }
 
 /* small screens */
@@ -306,34 +213,4 @@
         align-items: center;
     }
 
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 300;
-        width: 98%;
-        overflow: auto;
-        border-radius: 20px;
-        /* background-color: rgb(0, 0, 0); */
-        background-color: rgba(255, 255, 255, 1);
-    }
-
-    .modal-content {
-        width: 100%;
-        height: 100%;
-        background-color: rgb(255, 255, 255, 1);
-        padding: 20px;
-    }
-
-    .modal-content>div:nth-child(3)>div {
-        width: 100%;
-        display: flex;
-        gap: 20px;
-    }
-
-    .modal-content>div:nth-child(3)>div>img {
-        width: 40px;
-        height: 40px;
-    }
 }
