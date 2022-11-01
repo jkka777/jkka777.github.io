@@ -657,6 +657,8 @@ catchElem('.buttons-nav>div:nth-child(5)>button').addEventListener('click', cont
 
 let resume = () => {
 
+    window.open('https://drive.google.com/file/d/1BjBdLoDuAGOOCp55gpwQ_Ap3tTu12CW2/view?usp=sharing');
+
     // styling part //
 
     catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
