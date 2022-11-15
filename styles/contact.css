@@ -79,11 +79,21 @@
     /* border: 1px solid black; */
 }
 
-#mail>img,
-#link>img {
+#mail>img {
     width: 100px;
     height: 60px;
+
     /* border: 1px solid black; */
+}
+
+#link>img {
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+#link>a {
+    margin-left: 20px;
 }
 
 #git>img,
@@ -91,6 +101,7 @@
     width: 60px;
     height: 60px;
     margin-left: 24px;
+    border-radius: 50%;
 }
 
 #mail>p>a,
@@ -243,10 +254,18 @@
 
     #mail>img,
     #link>img {
-        width: 50px;
-        height: 25px;
+        width: 40px;
+        height: 30px;
         /* border: 1px solid black; */
     }
+
+    #link>img {
+        margin: auto;
+    }
+
+    /* #link>a {
+        margin-left: 15px;
+    } */
 
     #git>img,
     #phone>img {
