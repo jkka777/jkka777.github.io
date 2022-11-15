@@ -304,7 +304,7 @@ let projectsPage = () => {
     project_details.style.textDecoration = 'underline';
 
     let project_featuers = createElem('p');
-    project_featuers.textContent = 'bewakoof.com is an online shopping website where one can shop for clothes and accessories for men and women. This clone has the features of SignUp, Login, Shop Mens clothes, Shop Womens clothes and Add to cart functationality, Payments'
+    project_featuers.textContent = 'bewakoof.com is an online shopping website where one can shop for clothes and accessories for men and women. This clone has the features of SignUp, Login, Shop Mens clothes, Shop Womens clothes and Add to cart functationality'
 
     div1.append(project_details, project_featuers);
 
