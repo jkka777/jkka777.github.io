@@ -523,7 +523,100 @@ let projectsPage = () => {
 
     p3.append(p3_1, p3_2);
 
-    prj_main.append(p1, p2, p3);
+
+    /*----------------------------------------project 4----------------------------------------*/
+
+    let p4 = createElem('div');
+
+    let p4_1 = createElem('div');
+    p4_1.setAttribute('id', 'project-box1');
+
+    let p4_name = createElem('h4');
+    p4_name.textContent = 'Crime Information Management System - console based application';
+
+    let p4_img = createElem('img');
+    p4_img.src = 'util/CIMS.png';
+
+    let p4_innerDiv = createElem('div');
+
+    let p4_link = createElem('a');
+    p4_link.setAttribute('href', 'https://drive.google.com/file/d/12L2GOSCW6DB18bJjlaH4liMQo6m_H_bM/view');
+    p4_link.setAttribute('target', '_blank');
+    p4_link.textContent = 'Video link';
+    p4_link.style.cssText += 'text-decoration:none';
+
+    let repo_link4 = createElem('img');
+    repo_link4.setAttribute('src', 'util/github_png.webp');
+    repo_link4.addEventListener('click', () => window.open('https://github.com/jkka777/CIMS-Crime-Information-and-Management-System-'));
+    repo_link4.style.cssText += 'height:26px;width:26px;cursor:pointer';
+
+    p4_innerDiv.append(p4_link, repo_link4);
+
+    p4_1.append(p4_name, p4_img, p4_innerDiv);
+
+    let p4_2 = createElem('div');
+    p4_2.setAttribute('id', 'project-box2');
+
+    let div4_1 = createElem('div');
+
+    let project_details_4 = createElem('h4');
+    project_details_4.textContent = 'Features';
+    project_details_4.style.textDecoration = 'underline';
+
+    let project_featuers_4 = createElem('p');
+    project_featuers_4.textContent = 'Crime information management system is a console based application which registers the crime and its related information and stores in the SQL database.'
+
+    div4_1.append(project_details_4, project_featuers_4);
+
+    let div4_2 = createElem('div');
+
+    let pt_4_1 = createElem("h4");
+    pt_4_1.textContent = 'Languages';
+    pt_4_1.style.textDecoration = 'underline';
+
+    let lang_div_4 = createElem('div');
+    lang_div_4.setAttribute('id', 'lang-div-1');
+
+    let html_logo_4 = createElem('img');
+    html_logo_4.src = 'util/java.webp';
+
+    let css_logo_4 = createElem('img');
+    css_logo_4.src = 'util/mysql.webp';
+
+    // let js_logo_4 = createElem('img');
+    // js_logo_4.src = 'util/javascript.webp';
+
+    lang_div_4.append(html_logo_4, css_logo_4);
+
+    let pt_4_2 = createElem('h4');
+    pt_4_2.textContent = 'Tools';
+    pt_4_2.style.textDecoration = 'underline';
+
+    let tool_div_4 = createElem('div');
+    tool_div_4.setAttribute('id', 'tool-div-1');
+    let vs_code_logo_4 = createElem('img');
+    vs_code_logo_4.src = 'util/spring.webp';
+
+    let git_logo_4 = createElem('img');
+    git_logo_4.src = 'util/github_png.webp';
+
+    let npm_logo_4 = createElem('img');
+    npm_logo_4.src = 'util/npm.webp';
+
+    let heroku_logo_4 = createElem('img');
+    heroku_logo_4.src = 'util/heroku.webp';
+
+    tool_div_4.append(vs_code_logo_4, git_logo_4);
+
+    div4_2.append(pt_4_1, lang_div_4, pt_4_2, tool_div_4);
+
+    p4_2.append(div4_1, div4_2);
+
+    p4.append(p4_1, p4_2);
+
+
+
+    prj_main.append(p1, p2, p3, p4);
 
     prj_content.append(prj_main);
 
