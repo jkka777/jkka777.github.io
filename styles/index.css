@@ -95,8 +95,71 @@
     width: 100%;
 }
 
+.about_title {
+    width: 15%;
+    height: 60px;
+    margin: auto;
+    margin-top: 120px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.about_title>h2 {
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+}
+
+.details_div {
+    width: 80%;
+    height: 40%;
+    /* margin-top: 40px; */
+    /* border-bottom-right-radius: 150px; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.details_div>p {
+    width: 70%;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-left: 80px;
+    font-size: 22px;
+    word-wrap: break-word;
+    word-spacing: 9;
+    line-height: 1.6;
+    text-align: justify;
+    float: right;
+}
+
+.home-resume-div {
+    /* margin: auto; */
+    margin-left: 150px;
+    /* border: 1px solid black; */
+}
+
+.home-resume-button {
+    width: 150px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border: 0.5px solid gainsboro;
+    outline: none;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
 .home-content {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     width: 100%;
     height: 50%;
     display: flex;
@@ -115,25 +178,6 @@
     animation-duration: 4s;
     position: relative;
     /* border: 1px solid black; */
-}
-
-.home-resume-div{
-    margin-left: 150px;
-    justify-content: center;
-    /* border: 1px solid black; */
-}
-
-.home-resume-button {
-    width: 150px;
-    height: 60px;
-    background-color: black;
-    color: white;
-    border: 0.5px solid gainsboro;
-    outline: none;
-    border-radius: 15px;
-    font-weight: 500;
-    font-size: 20px;
-    cursor: pointer;
 }
 
 @keyframes name-anim {
@@ -169,11 +213,11 @@
     25%,
     50%,
     75% {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     100% {
-        font-size: 60px;
+        font-size: 40px;
     }
 }
 
@@ -186,19 +230,19 @@
     25%,
     50%,
     75% {
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 40px;
     }
 
     100% {
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 40px;
     }
 }
 
 .intro-div>div:nth-child(1)>h2 {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 400;
     animation: name-intro-font;
     animation-duration: 4s;
@@ -206,8 +250,8 @@
 }
 
 .intro-div>div:nth-child(1)>img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     animation: greet-intro-anim;
     animation-duration: 4s;
     animation-delay: 0s;
@@ -222,7 +266,7 @@
 }
 
 .intro-div>div:nth-child(2)>h2 {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 400;
     animation: name-intro-font;
     animation-duration: 4s;
@@ -238,7 +282,7 @@
 }
 
 .intro-div>div:nth-child(3)>h2 {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 400;
     animation: name-intro-font;
     animation-duration: 4s;
@@ -246,14 +290,14 @@
 }
 
 .profile-img-div {
-    width: 50%;
+    width: 60%;
     height: 60%;
     margin: auto;
     /* border: 1px solid black; */
 }
 
 .profile-img-div>img {
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: block;
     margin-left: auto;
@@ -342,7 +386,7 @@
     .home-content {
         margin-top: 40px;
         width: 100%;
-        height: 100%;
+        height: 50%;
         display: flex;
         /* border: 1px solid black; */
     }
@@ -445,8 +489,8 @@
     }
 
     .profile-img-div>img {
-        width: 80%;
-        height: 70%;
+        width: 70%;
+        height: 90%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -454,6 +498,50 @@
         border-radius: 100%;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         /* border: 1px solid yellow; */
+    }
+
+    .about_title {
+        width: 20%;
+        height: 50px;
+        margin: auto;
+        margin-top: 120px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    .about_title>h2 {
+        font-size: 30px;
+        font-weight: 400;
+        color: white;
+    }
+
+    .details_div {
+        width: 100%;
+        height: 30%;
+        /* margin-top: 40px; */
+        border-bottom-right-radius: 150px;
+        /* border: 1px solid black; */
+    }
+
+    .details_div>p {
+        width: 70%;
+        padding-top: 20px;
+        padding-right: 20px;
+        font-size: 26px;
+        word-wrap: break-word;
+        word-spacing: 9;
+        line-height: 1.6;
+        text-align: justify;
+        float: right;
+    }
+
+    .home-resume-div {
+        /* margin: auto; */
+        margin-left: 150px;
+        /* border: 1px solid black; */
     }
 }
 
@@ -534,7 +622,7 @@
     .home-content {
         margin-top: 60px;
         width: 100%;
-        height: 100%;
+        height: 60%;
         display: inline-block;
         /* border: 1px solid black; */
     }
@@ -557,7 +645,7 @@
 
     .intro-div {
         width: 100%;
-        height: 40%;
+        height: 30%;
         margin: auto;
         animation-name: name-anim;
         animation-delay: 0s;
@@ -671,7 +759,7 @@
 
     .profile-img-div>img {
         width: 80%;
-        height: 50%;
+        height: 70%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -679,5 +767,49 @@
         border-radius: 100%;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         /* border: 1px solid yellow; */
+    }
+
+    .about_title {
+        width: 30%;
+        height: 30px;
+        margin: auto;
+        margin-top: 80px;
+        text-align: center;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    .about_title>h2 {
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .details_div {
+        width: 100%;
+        height: 25%;
+        /* margin-top: 40px; */
+        border-bottom-right-radius: 150px;
+        /* border: 1px solid black; */
+    }
+
+    .details_div>p {
+        width: 100%;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 15px;
+        word-wrap: break-word;
+        word-spacing: 9;
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    .home-resume-div {
+        /* margin: auto; */
+        margin-left: 150px;
+        /* border: 1px solid black; */
     }
 }

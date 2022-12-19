@@ -16,6 +16,8 @@ window.addEventListener('load', () => toHomePage());
 
 let toHomePage = () => {
 
+    mainContent.style.height = '1200px';
+
     mainContent.innerHTML = '';
 
     /*  home structure
@@ -29,6 +31,13 @@ let toHomePage = () => {
 
     let hc_div = createElem('div');
     hc_div.setAttribute('class', 'home-content');
+
+    let about_title = createElem('div');
+    about_title.setAttribute('class', 'about_title');
+    let about_h2 = createElem('h2');
+    about_h2.textContent = 'About Me';
+
+    about_title.append(about_h2);
 
     let intro_div = createElem('div');
     intro_div.setAttribute('class', 'intro-div');
@@ -68,24 +77,8 @@ let toHomePage = () => {
 
     hc_div.append(intro_div, pic_div);
 
-    let about_div = createElem('div');
-    about_div.setAttribute('class', 'about-content');
-
-    let about_title = createElem('div');
-    let about_h2 = createElem('h2');
-    about_h2.textContent = 'About';
-
-    about_title.append(about_h2);
-
-    let details_div = createElem('div');
-    let details_p = createElem('p');
-    details_p.textContent = `Hi! I'm Kishore Jeelugula, an aspiring software developer where I look for the oppurtunity to upskill and develop the robust and user-friendly applications. I work for the details in every aspect, As they say "Devil lies in the details". I'm Passionate about working with enthusiastic and energetic minds.`;
-
-    details_div.append(details_p);
-
-    about_div.append(about_title, details_div);
-
-    hc_div1.append(hc_div);
+    // let about_div = createElem('div');
+    // about_div.setAttribute('class', 'about-content');
 
     let resume_div = createElem('div');
     resume_div.setAttribute('class', 'home-resume-div');
@@ -93,11 +86,32 @@ let toHomePage = () => {
     let resume_button = createElem('button');
     resume_button.setAttribute('class', 'home-resume-button');
     resume_button.textContent = 'Resume';
-    resume_button.addEventListener('click', ()=> window.open('https://drive.google.com/file/d/1BjBdLoDuAGOOCp55gpwQ_Ap3tTu12CW2/view?usp=sharing'));
+    resume_button.addEventListener('click', () => window.open('https://drive.google.com/file/d/1BjBdLoDuAGOOCp55gpwQ_Ap3tTu12CW2/view?usp=sharing'));
 
     resume_div.append(resume_button);
 
-    mainContent.append(hc_div1, resume_div, about_div);
+    let details_div = createElem('div');
+    details_div.setAttribute('class', 'details_div');
+    let details_p = createElem('p');
+    details_p.textContent = `Hi! I'm Kishore Jeelugula, an aspiring software developer where I look for the oppurtunity to upskill and develop the robust and user-friendly applications. I work for the details in every aspect, As they say "Devil lies in the details". I'm Passionate about working with enthusiastic and energetic minds.`;
+
+    details_div.append(details_p,resume_button);
+
+    // about_div.append(about_title, details_div);
+
+    hc_div1.append(about_title, hc_div);
+
+    // let resume_div = createElem('div');
+    // resume_div.setAttribute('class', 'home-resume-div');
+
+    // let resume_button = createElem('button');
+    // resume_button.setAttribute('class', 'home-resume-button');
+    // resume_button.textContent = 'Resume';
+    // resume_button.addEventListener('click', () => window.open('https://drive.google.com/file/d/1BjBdLoDuAGOOCp55gpwQ_Ap3tTu12CW2/view?usp=sharing'));
+
+    // resume_div.append(resume_button);
+
+    mainContent.append(hc_div1, details_div);
 
     catchElem('.buttons-nav>div:nth-child(1)>button').style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
 
@@ -110,8 +124,6 @@ let toHomePage = () => {
     catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600;';
 
     // catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
-
-    // mainContent.style.height = '980px';
 
 };
 
@@ -217,7 +229,31 @@ let skillsPage = () => {
     skill6_img.setAttribute('alt', 'github icon');
     skill6.append(skill6_img);
 
-    tech_skills.append(skill1, skill2, skill3, skill4, skill5, skill6);
+    let skill7 = createElem('div');
+    let skill7_img = createElem('img');
+    skill7_img.src = 'util/hibernate.webp';
+    skill7_img.setAttribute('alt', 'github icon');
+    skill7.append(skill7_img);
+
+    let skill8 = createElem('div');
+    let skill8_img = createElem('img');
+    skill8_img.src = 'util/postman.webp';
+    skill8_img.setAttribute('alt', 'github icon');
+    skill8.append(skill8_img);
+
+    let skill9 = createElem('div');
+    let skill9_img = createElem('img');
+    skill9_img.src = 'util/mysql.webp';
+    skill9_img.setAttribute('alt', 'github icon');
+    skill9.append(skill9_img);
+
+    let skill10 = createElem('div');
+    let skill10_img = createElem('img');
+    skill10_img.src = 'util/aws.webp';
+    skill10_img.setAttribute('alt', 'github icon');
+    skill10.append(skill10_img);
+
+    tech_skills.append(skill1, skill2, skill3, skill4, skill5, skill6, skill7, skill8, skill9, skill10);
 
     // styling part //
 
