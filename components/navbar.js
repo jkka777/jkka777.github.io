@@ -5,7 +5,6 @@ let navbar = () => {
         </div>
         <div class="buttons-nav">
             <div><button>Home</button></div>
-            <div><button>About Me</button></div>
             <div><button>Skills</button></div>
             <div><button>Projects</button></div>
             <div><button>Contact</button></div>
