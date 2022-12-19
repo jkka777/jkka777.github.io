@@ -257,8 +257,8 @@
         margin: auto;
         margin-top: 20px;
         margin-bottom: 40px;
-        grid-template-columns: repeat(2, 1fr);
-        width: 50%;
+        grid-template-columns: repeat(3, 1fr);
+        width: 60%;
         gap: 20px;
         /* border: 1px solid black; */
     }

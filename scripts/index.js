@@ -95,7 +95,7 @@ let toHomePage = () => {
     let details_p = createElem('p');
     details_p.textContent = `Hi! I'm Kishore Jeelugula, an aspiring software developer where I look for the oppurtunity to upskill and develop the robust and user-friendly applications. I work for the details in every aspect, As they say "Devil lies in the details". I'm Passionate about working with enthusiastic and energetic minds.`;
 
-    details_div.append(details_p,resume_button);
+    details_div.append(details_p, resume_button);
 
     // about_div.append(about_title, details_div);
 
@@ -267,7 +267,7 @@ let skillsPage = () => {
 
     // catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
-    // catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+    catchElem('.buttons-nav>div:nth-child(5)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
     let git_stattus = createElem('div');
     git_stattus.setAttribute('class', 'git-stats');
@@ -821,8 +821,8 @@ let resume = () => {
 
     // styling part //
 
-    let resume_btn = catchElem('.buttons-nav>div:nth-child(5)>a>button');
-    resume_btn.style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
+    // let resume_btn = catchElem('.buttons-nav>div:nth-child(5)>a>button');
+    // resume_btn.style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
 
     catchElem('.buttons-nav>div:nth-child(5)>a>button').style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
 
