@@ -77,25 +77,38 @@ let toHomePage = () => {
 
     hc_div.append(intro_div, pic_div);
 
-    // let about_div = createElem('div');
-    // about_div.setAttribute('class', 'about-content');
-
     let resume_div = createElem('div');
     resume_div.setAttribute('class', 'home-resume-div');
+
+    let resume_a = createElem('a');
+    resume_a.setAttribute("href","https://drive.google.com/file/d/1BjBdLoDuAGOOCp55gpwQ_Ap3tTu12CW2/view?usp=sharing");
+    resume_a.setAttribute("download","Kishore-Jeelugula-Resume");
+    resume_a.setAttribute('target','_blank');
 
     let resume_button = createElem('button');
     resume_button.setAttribute('class', 'home-resume-button');
     resume_button.textContent = 'Resume';
-    resume_button.addEventListener('click', () => window.open('https://drive.google.com/file/d/1BjBdLoDuAGOOCp55gpwQ_Ap3tTu12CW2/view?usp=sharing'));
 
-    resume_div.append(resume_button);
+    resume_a.append(resume_button);
 
+    resume_div.append(resume_a);
+/*
+    function download(file, url) {
+        let element = document.createElement('a');
+        element.setAttribute('href', url);
+        element.setAttribute('download', file);
+        element.setAttribute('target', '_blank');
+        resume_div.append(element);
+        element.click();
+        resume_div.remove(element);
+    }
+*/
     let details_div = createElem('div');
     details_div.setAttribute('class', 'details_div');
     let details_p = createElem('p');
     details_p.textContent = `Hi! I'm Kishore Jeelugula, an aspiring software developer where I look for the oppurtunity to upskill and develop the robust and user-friendly applications. I work for the details in every aspect, As they say "Devil lies in the details". I'm Passionate about working with enthusiastic and energetic minds.`;
 
-    details_div.append(details_p, resume_button);
+    details_div.append(details_p, resume_div);
 
     // about_div.append(about_title, details_div);
 
