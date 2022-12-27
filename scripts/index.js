@@ -121,56 +121,17 @@ let toHomePage = () => {
 
     catchElem('.buttons-nav>div:nth-child(4)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
-    catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600;';
+    catchElem('.buttons-nav>div:nth-child(5)>a>button').style.cssText += 'border-radius:5px;background-color:yellow;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(5)').style.cssText += 'border-radius:5px;background-color:yellow;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(5)>a').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
     // catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
 };
 
 catchElem('.buttons-nav>div:nth-child(1)>button').addEventListener('click', toHomePage);
-
-/*<===============> --------- about page script -------- <===================>*/
-
-// let aboutPage = () => {
-
-//     mainContent.innerHTML = '';
-
-//     let about_div = createElem('div');
-//     about_div.setAttribute('class', 'about-content');
-
-//     let about_title = createElem('div');
-//     let about_h2 = createElem('h2');
-//     about_h2.textContent = 'About';
-
-//     about_title.append(about_h2);
-
-//     let details_div = createElem('div');
-//     let details_p = createElem('p');
-//     details_p.textContent = `Hi! I'm Kishore Jeelugula, an aspiring software developer where I look for the oppurtunity to upskill and develop the robust and user-friendly applications. I work for the details in every aspect, As they say "Devil lies in the details". I'm Passionate about working with enthusiastic and energetic minds.`;
-
-//     details_div.append(details_p);
-
-//     about_div.append(about_title, details_div);
-
-//     mainContent.append(about_div);
-
-//     catchElem('.buttons-nav>div:nth-child(2)>button').style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
-
-//     catchElem('.buttons-nav>div:nth-child(1)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
-
-//     catchElem('.buttons-nav>div:nth-child(3)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
-
-//     catchElem('.buttons-nav>div:nth-child(4)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
-
-//     catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
-
-//     // catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
-
-//     // mainContent.style.height = '980px';
-
-// };
-
-// catchElem('.buttons-nav>div:nth-child(2)>button').addEventListener('click', aboutPage);
 
 /*<===============> --------- skills page script -------- <===================>*/
 
@@ -267,7 +228,11 @@ let skillsPage = () => {
 
     // catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
-    catchElem('.buttons-nav>div:nth-child(5)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+    catchElem('.buttons-nav>div:nth-child(5)>a>button').style.cssText += 'border-radius:5px;background-color:yellow;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(5)').style.cssText += 'border-radius:5px;background-color:yellow;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(5)>a').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
     let git_stattus = createElem('div');
     git_stattus.setAttribute('class', 'git-stats');
@@ -697,7 +662,11 @@ let projectsPage = () => {
 
     catchElem('.buttons-nav>div:nth-child(4)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
-    catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+    catchElem('.buttons-nav>div:nth-child(5)>a>button').style.cssText += 'border-radius:5px;background-color:yellow;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(5)').style.cssText += 'border-radius:5px;background-color:yellow;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(5)>a').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
     // catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
@@ -808,7 +777,11 @@ let contactPage = () => {
 
     catchElem('.buttons-nav>div:nth-child(3)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
-    catchElem('.buttons-nav>div:nth-child(5)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
+    catchElem('.buttons-nav>div:nth-child(5)>a>button').style.cssText += 'border-radius:5px;background-color:yellow;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(5)').style.cssText += 'border-radius:5px;background-color:yellow;color:black;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(5)>a').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
     // catchElem('.buttons-nav>div:nth-child(6)>a>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 };
@@ -825,6 +798,8 @@ let resume = () => {
     // resume_btn.style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
 
     catchElem('.buttons-nav>div:nth-child(5)>a>button').style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
+
+    catchElem('.buttons-nav>div:nth-child(5)').style.cssText += 'border-radius:5px;background-color:black;color:white;font-weight:600';
 
     catchElem('.buttons-nav>div:nth-child(1)>button').style.cssText += 'border-radius:5px;background-color:transparent;color:black;font-weight:600';
 
