@@ -279,7 +279,7 @@ let skillsPage = () => {
     git_streaks.setAttribute('class', 'streaks');
 
     let stats = createElem('img');
-    stats.src = 'https://github-readme-stats.vercel.app/api?username=jkka777&theme=graywhite&show_icons=true&hide_border=true';
+    stats.src = 'https://github-readme-stats-jkka777.vercel.app/api?username=jkka777&theme=graywhite&show_icons=true&hide_border=true';
     stats.alt = "kishore's github stats";
 
     let streak = createElem('img');
