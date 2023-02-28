@@ -110,7 +110,7 @@
         display: block;
     }
 
-    .contact-cont-links-2{
+    .contact-cont-links-2 {
         width: 100%;
     }
 
@@ -155,11 +155,67 @@
         font-size: 12px;
         font-weight: 400;
         color: #777777;
+    }
+
+    .contact-cont-links-1 {
+        width: 100%;
+        display: block;
+        margin: 0%;
+        padding: 0%;
+        /* border: 1px solid black; */
+    }
+
+
+    .contact-cont-links-2 {
+        width: 100%;
+        display: block;
+        margin: 0%;
+        padding: 0%;
+        /* border: 1px solid black; */
+    }
+
+    .cont1 div:nth-child(1) img,
+    .cont2 div:nth-child(1) img,
+    .cont3 div:nth-child(1) img,
+    .cont4 div:nth-child(1) img,
+    .cont5 div:nth-child(1) img {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    .cont1 div:nth-child(1) img,
+    .cont2 div:nth-child(1) img,
+    .cont3 div:nth-child(1) img,
+    .cont4 div:nth-child(1) img,
+    .cont5 div:nth-child(1) img {
+        height: 35px;
+        width: 35px;
+        /* border: 1px solid black; */
+    }
+
+    .contact-cont-links-1 {
+        width: 100%;
+        display: block;
+        margin: 0%;
+        padding: 0%;
+        /* border: 1px solid black; */
+    }
+
+
+    .contact-cont-links-2 {
+        width: 100%;
+        display: block;
+        margin: 0%;
+        padding: 0%;
+        /* border: 1px solid black; */
     }
 }
 
 @media screen and (max-width:425px) {
-    
+
     .contact-cont-links {
         display: flex;
         flex-direction: column;
@@ -170,7 +226,7 @@
         display: block;
     }
 
-    .contact-cont-links-2{
+    .contact-cont-links-2 {
         width: 100%;
     }
 
@@ -218,7 +274,7 @@
     }
 }
 
-@media screen and (min-width: 425px) and (max-width: 768px){
+@media screen and (min-width: 425px) and (max-width: 768px) {
     .contact-cont-links {
         display: flex;
         flex-direction: column;
@@ -229,7 +285,7 @@
         display: block;
     }
 
-    .contact-cont-links-2{
+    .contact-cont-links-2 {
         width: 100%;
     }
 
@@ -274,5 +330,21 @@
         font-size: 12px;
         font-weight: 400;
         color: #777777;
+    }
+
+    .contact-cont-links-1 {
+        width: 100%;
+        display: block;
+        margin: 0%;
+        padding: 0%;
+        /* border: 1px solid black; */
+    }
+
+    .contact-cont-links-2 {
+        width: 100%;
+        display: block;
+        margin: 0%;
+        padding: 0%;
+        /* border: 1px solid black; */
     }
 }
