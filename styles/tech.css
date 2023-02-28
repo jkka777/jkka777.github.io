@@ -148,7 +148,7 @@
 
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
     .tech-col div:nth-child(7) img {
         padding-top: 20px;
         height: 90%;
