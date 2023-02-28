@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.skills-section {
+    width: 100%;
+    margin: auto;
+    margin: 100px 0;
+    /* border: 1px solid black; */
+}
+
+.skill-sect-head {
+    width: 100%;
+    margin: auto;
+    padding: 20px 20px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.skill-sect-head h2 {
+    font-size: 31px;
+    font-weight: 600;
+    margin: 40px 0 40px 0;
+    color: black;
+}
+
+.git-contri {
+    width: 100%;
+    margin: auto;
+    padding: 20px 20px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.git-center {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin: 20px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    /* border: 1px solid black; */
+}
+
+.git-status {
+    width: 100%;
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    margin: auto;
+}
+
+.streak-1,
+.streak-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    padding: 20px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.streak-1 img,
+.streak-2 img {
+    width: 100%;
+    border-radius: 15px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+}
+
+@media only screen and (max-width: 768px) {
+    .git-center {
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+
+    .git-status {
+        width: 100%;
+        margin: auto;
+        margin-left: 10px;
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+
+    .streak-1,
+    .streak-2 {
+        padding: 20px 20px;
+        cursor: pointer;
+        border-radius: 15px;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+    }
+
+    .streak-1 img,
+    .streak-2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .git-status {
+        display: block;
+    }
+
+    .streak-1,
+    .streak-2 {
+        width: 100%;
+        margin-left: 30px;
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    .git-contri {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: 20px 20px;
+        text-align: center;
+        /* border: 1px solid black; */
+    }
+
+    .git-center {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        margin: 20px 20px;
+        cursor: pointer;
+        /* border: 1px solid black; */
+    }
+
+    .git-status {
+        width: 100%;
+        margin: auto;
+        display: block;
+        /* border: 1px solid black; */
+    }
+
+    .streak-1,
+    .streak-2 {
+        width: 100%;
+        /* margin-left: 90px; */
+        /* padding: 20px 20px; */
+        cursor: pointer;
+        border-radius: 15px;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+    }
+
+    .streak-1 img,
+    .streak-2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: none;
+    }
+
+    /* .streak-2 img{
+        width: max-content;
+        margin: auto;
+    } */
+}
+
+@media screen and (min-width:568px) {
+
+    .git-contri {
+        width: 100%;
+        margin: auto;
+        padding: 20px 20px;
+        text-align: center;
+        /* border: 1px solid black; */
+    }
+
+
+    .git-status {
+        width: 100%;
+        margin: auto;
+        /* margin-left: 30px; */
+        /* border: 1px solid black; */
+    }
+
+    .streak-1,
+    .streak-2 {
+        /* padding: 20px 20px; */
+        cursor: pointer;
+        border-radius: 15px;
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+    }
+
+    .streak-1 img,
+    .streak-2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .git-contri {
+        width: 100%;
+        margin: auto;
+        padding: 20px 20px;
+        text-align: center;
+        /* border: 1px solid black; */
+    }
+
+    .git-status {
+        width: 100%;
+        margin: auto;
+        /* margin-left: 30px; */
+        /* display: flex; */
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+
+    .streak-1,
+    .streak-2 {
+        width: fit-content;
+        /* padding: 20px 20px; */
+        cursor: pointer;
+        border-radius: 15px;
+    }
+
+    .streak-1 img,
+    .streak-2 img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    }
+
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .git-center {
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+
+    .git-status {
+        width: 100%;
+        margin: auto;
+        display: block;
+        gap: 40px;
+        margin-left: 20px;
+        /* border: 1px solid black; */
+    }
+
+    .streak-1,
+    .streak-2 {
+        width: 100%;
+        /* margin-left: 90px; */
+        /* padding: 20px 20px; */
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    }
+
+
+}
