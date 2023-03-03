@@ -40,3 +40,11 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+catchElement('.git-contri').addEventListener('click', () => {
+    window.open("https://github.com/jkka777");
+});
+
+catchElement('.git-status').addEventListener('click', () => {
+    window.open("https://github.com/jkka777");
+});
